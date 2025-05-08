@@ -113,7 +113,7 @@ if uploaded_video:
         total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 
         target_width, target_height = 960, 540
-        fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Changed from X264 to mp4v
+        fourcc = cv2.VideoWriter_fourcc(*'X264')  # X264
         out = cv2.VideoWriter(output_path, fourcc, fps, (target_width, target_height))
 
         start_time = time.time()
